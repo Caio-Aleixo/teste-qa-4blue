@@ -1,5 +1,7 @@
-# teste-qa-4blue
-Teste técnico para a etapa de QA Tester na 4blue.
+# Teste Técnico - QA Tester - 4blue
+Relatório de testes realizado no microssistema de avaliação para a vaga de QA Tester.
+
+Bugs Identificados
 
 ----------------------------------------------------------------
 Bug 01: [Segurança] Acesso direto à tela interna (Bypass de Login)
