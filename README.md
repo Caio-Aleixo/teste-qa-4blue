@@ -1,7 +1,7 @@
 # Teste Técnico - QA Tester - 4blue
 Relatório de testes realizado no microssistema de avaliação para a vaga de QA Tester.
 
-Bugs Identificados
+Bugs Identificados:
 
 ----------------------------------------------------------------
 Bug 01: [Segurança] Acesso direto à tela interna (Bypass de Login)
