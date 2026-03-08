@@ -19,9 +19,9 @@ Bug 01: [Segurança] Acesso direto à tela interna (Bypass de Login)
 
 * Resultado esperado: O sistema deve verificar se o usuário possui uma sessão ativa. Caso não esteja logado, deve redirecionar obrigatoriamente para a tela de Login (/).
 
-* Severidade: Crítico (Falha de segurança que expõe áreas restritas).
+* Severidade: Crítico.
 
-* Prioridade: Alta (Deve ser corrigido imediatamente para proteger a integridade do sistema).
+* Prioridade: Alta.
   
 ----------------------------------------------------------------
 Bug 02: [UI/UX] Layout quebrado nos campos do formulário de cadastro
@@ -38,9 +38,9 @@ Bug 02: [UI/UX] Layout quebrado nos campos do formulário de cadastro
 
 * Resultado esperado: Todos os campos devem estar contidos dentro do card central, com espaçamentos (respiros) uniformes nas laterais.
 
-* Severidade: Baixo (Não impede o cadastro, mas prejudica a estética e usabilidade).
+* Severidade: Baixo.
 
-* Prioridade: Média (Interface visual é a primeira impressão do usuário).
+* Prioridade: Média.
 
 ----------------------------------------------------------------
 Bug 03: [Funcional/Segurança] Cadastro permitido sem preenchimento de senhas
@@ -59,8 +59,8 @@ Bug 03: [Funcional/Segurança] Cadastro permitido sem preenchimento de senhas
 
 * Resultado Esperado: O sistema deve validar que a senha é um campo obrigatório e impedir o cadastro sem uma definição de credenciais.
 
-* Severidade: Crítica (Um usuário sem senha é uma vulnerabilidade de segurança e um erro lógico de autenticação).
-
+* Severidade: Crítica.
+  
 * Prioridade: Alta.
 
 ----------------------------------------------------------------
@@ -104,3 +104,20 @@ Bug 05: [Integridade de Dados] Falha de máscara e sanitização de campos
 * Prioridade: Média
 
 ----------------------------------------------------------------
+
+
+Quais 2 bugs você corrigiria primeiro e por quê?
+
+  - Bug 01 (Bypass de Login): Por ser uma falha de segurança que compromete toda a aplicação. Permitir acesso à área logada via URL torna qualquer outro esforço de segurança inútil.
+
+  - Bug 04 (Validação de Senha): Para garantir que o usuário não crie uma conta com erro de digitação (senhas diferentes) e que a conta possua um nível mínimo de proteção.
+
+Sugestões de melhorias:
+
+  - Máscaras de Input: Adicionar máscara automática no campo de telefone para facilitar o preenchimento.
+
+  - Toggle de Visibilidade: Incluir um ícone de "olho" nos campos de senha para que o usuário possa conferir o que digitou.
+
+  - Validação em Tempo Real: Exibir ícones de "Check" ou "Erro" enquanto o usuário preenche os campos, antes mesmo de clicar no botão de enviar.
+
+  - Página de 404: Personalizar a página de erro 404 para que ela tenha uma identidade visual da marca.
